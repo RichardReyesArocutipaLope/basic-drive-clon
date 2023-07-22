@@ -1,0 +1,73 @@
+// START - GRID container ==================================================
+body{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: 4rem auto 1fr;
+}
+// HEADER principal
+.header{
+    grid-column: 1/span 3;
+    grid-row: 1/span 1;
+}
+
+// NEW documento
+.new-document{
+    grid-column: 1 / span 1;
+    grid-row: 2/ span 1;
+}
+
+
+// NAV principal
+.nav-menu{
+    grid-column: 1/span 1;
+    grid-row: 3/ span 1;
+}
+
+// MAIN principal
+main{
+    grid-column: 2/span 1;
+    grid-row: 2/span 2;
+}
+
+// NAV secundario 
+.nav-complementos{
+    grid-column: 3 /span 1;
+    grid-row: 2/ span 2 
+}
+
+// END - GRID container ==================================================
+
+//grid layout grid
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 328px;
+    grid-template-rows: 49px 1fr;
+}
+
+
+.docs-header{
+    grid-column: 1/span 2;
+    grid-row: 1/span 1;
+}
+
+.docs-main{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.docs-main-complete{
+    grid-column: 1 / span 2; 
+}
+
+.docs-detalles{
+    grid-column: 2 / span 1;
+    grid-row: 2/span 1;
+}
+
+//
+
+.flx-a-c{
+    display: flex;
+    align-items: center;
+}

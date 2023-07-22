@@ -1,0 +1,321 @@
+.main{
+    max-height: calc(100vh - 7.0625rem);
+    overflow-y: auto;
+}
+
+.main-prioritario{
+    display: flex;
+}
+
+.card-info{
+    padding: 0px 6px 0px 12px ;
+    height: 43px;
+    justify-content: space-between;
+}
+.card-title img{
+    width: 16px;
+    height: 16px;
+}
+.card-title p{
+    margin-left: 12px;
+    width: 198px;
+    overflow: hidden;
+}
+.card-option{
+    width: 20px;
+    height: 20px;
+}
+
+.card-doc{
+    width: 270px;
+    height: 250px;
+    margin: 16px 16px 0px 0px;
+    border: 1px solid #DADCE0;
+    border-radius: 8px;
+}
+.card-image{
+    width: 268px;
+    height: 120px;
+    padding: 14px 14px 0px 14px;
+    overflow: hidden;
+    background-color: #F1F3F4;
+}
+.card-image img{
+    width: 100%;
+}
+.card-timestamp{
+    padding:15px 12px ;
+}
+.card-timestamp img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.card-open{
+    padding:0px 12px ;
+}
+.card-open a{
+    color: #1A73E8; 
+}
+
+//title 3
+.title-3{
+    color: #5F6368;
+    margin: 20px 8px 8px 8px;
+}
+.espacios-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+
+.new-espacio{
+    border: 1px solid #DADCE0;
+    border-radius: 7px;
+    margin: 12px 8px;
+    width: 285.75px;
+}
+.espacio-image{
+}
+.espacio-image img{
+    width: 100%;
+    padding: 12px 22px 12px 22px;
+}
+.espacio-info{
+    padding: 8px 16px;
+    color: #5F6368;
+    font-size: 1.05rem;
+}
+.ep-description{
+    padding: 1rem 0;
+    font-size: .9rem;
+}
+
+.espacio-create{
+    padding: 8px 16px 16px;  
+}
+
+.espacio-create button{
+    background-color: inherit;
+    border: 1px solid #DADCE0;
+    border-radius: 5px;
+    padding: .5rem .6rem;
+    color: #1967D2;
+}
+
+.espacios-ocultos{
+    border-bottom: 1px solid #DADCE0;
+    margin-bottom: 2rem;
+}
+
+.desactivado{
+    display: none;
+}
+
+
+//START /HEADER DE LOS DOCUMENTOS
+.docs-header{
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid $color-border;
+    justify-content: space-between;
+}
+.container-title{
+    display: flex;
+    position: relative;;
+}
+.docs-title{
+    color: $color-main-title;
+    padding: 3px 6px;
+    gap: .5rem;
+    border-radius: 5px;
+    margin: 8px 4px;
+}
+.docs-title>img{
+    width: 20px;
+    height: 20px;
+}
+.docs-title h2{
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+.docs-title:hover{
+    background-color: $color-bg-search;
+}
+.docs-analyze{
+    display: flex;
+    margin-right: 1rem;
+}
+
+//END /HEADER DE LOS DOCUMENTOS
+
+
+
+//START click mi unidad ventan
+.dh-desplegable{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 320px;
+    min-height: 50px;  
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px hsl(0,0,70);    
+    z-index: 10;
+    padding: 16px 0px;
+    visibility: hidden;
+    overflow: hidden;
+    transition: opacity .3s, top .3s, height .3s, visibility .3s;
+    opacity: 0;
+}
+
+.dh-desplegable__active{
+    visibility: visible;
+    height: 320px;
+    top: 100%;
+    opacity: 1;
+    overflow: initial;
+}
+.dh-desplegable-option{
+    width: 100%;
+    padding: 1.2px 1.6rem;
+    gap: .8rem;
+}
+.dh-desplegable-option:hover{
+    background-color: $color-bg-search;
+}
+.dh-desplegable-option p{
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-menu-optionName;
+    white-space: nowrap;
+}
+.dh-option-img{
+    width: 20px;
+    height: 20px;
+}
+.separacionZzZz{
+    margin: .5rem 0px;
+    border: none;
+    border-bottom: 1px solid $color-border;
+}
+.dieciseis{
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+}
+.veinte{
+    width: 20px;
+    height: 20px;
+}
+.veinte-dieciseis{
+    width: 20px;
+    height: 16px;
+    margin-bottom: 4px;
+}
+//sub opciones
+.suboption{
+    position: relative;
+    padding-left: .5rem;
+    border-left: 1px solid $color-border;
+    margin-left: auto;
+
+}
+.icon-suboption>img{
+    width: 10px;
+    height: 10px;
+}
+.icon-suboption{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icon-suboption>div{
+    padding-left: 58.6px;
+    position: absolute;
+    top: -3.7px;
+    left: 0;
+}
+.icon-suboption:hover{
+    background-color: hsl(0,0,80);
+}
+.sub-dh-desplegable{
+    position: relative;
+    z-index: 50;
+    opacity: 1;
+    width: 0px;
+    left: 0px;
+    height: max-content;
+    transition: width .3s, left .3s, visibility .3s;
+    overflow-x: hidden;
+}
+.suboption:hover .sub-dh-desplegable{
+    visibility: visible;
+    width: 320px;
+    left: 0px;
+}
+
+//END click mi unidad ventan
+
+
+
+//START detalles de los docs 
+.docs-detalles{
+}
+.detalles-title{
+    padding: 20px;
+    justify-content: space-between;
+}
+.detalles-title div:first-child{
+    gap: 1rem;
+}
+.detalles-title h2{
+    font-size: 22px;
+    font-weight: 400;
+    color: $color-cardTitle;
+}
+//detalles opciones de los detalles
+.detalles-options{
+    border-bottom: 1px solid $color-border;
+    padding: 0px 8px;
+}
+.detalles-options div{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+    font-size: 400;
+    margin: 0px 8px;
+    border-bottom: 4px solid transparent;
+    height: 48px;
+    line-height: 48px;
+    color: $color-main-title;
+}
+.detalles-options div:hover{
+    border-bottom: 4px solid #1A73E8;
+    color: #1A73E8;
+}
+//detalles contenido
+.detalles-content{
+    padding: 1rem;
+}
+.detCont-vacio{
+
+}
+.detalles-content img{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.detalles-content p{
+    font-size: 13px;
+    margin: 2rem 0px;
+    color: $color-main-title;
+    text-align: center;
+}
+//END detalles de los docs
+

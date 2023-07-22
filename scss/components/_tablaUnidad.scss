@@ -1,0 +1,59 @@
+.container-table{
+    padding-top: .8rem;
+    padding-right: 4rem;
+}
+.main-table{
+    width: 100%;
+    border-collapse: collapse;
+    empty-cells: hide;
+    font-size: 13px;
+    color: #777777;
+}
+
+th,td{
+    padding: .5rem .7rem;
+    margin: 0px 6px;
+    text-align: start;
+}
+tr{
+    border-bottom: 1px solid $color-border;
+    height: 48px;
+    display: flex;
+}
+tr:hover{
+    background-color: #F1F3F4;
+}
+tr th{
+    font-weight: 500;
+}
+td span{
+    color: #474747;
+}
+tr th:first-child{
+    margin-left: 0px;
+}
+th{
+    line-height: 31px;
+}
+.th-nombre{
+    gap: .8rem;
+    color: #474747;
+    font-weight: 500;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+.th-propietario{
+    flex-basis: 215px;
+    flex-grow: 0;
+    line-height: 31px;
+}
+.th-modificacion{
+    flex-basis: 200px;
+    flex-grow: 0;
+    line-height: 31px;
+}
+.th-tamaño{
+    flex-basis: 140px;
+    flex-grow: 0;
+    line-height: 31px;
+}

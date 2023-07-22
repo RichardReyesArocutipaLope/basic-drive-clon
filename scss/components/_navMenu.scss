@@ -1,0 +1,37 @@
+.nav-menu{
+    width: 257px;
+    padding-right: 16px;
+}
+.menu-expandir{
+    width: 24px;
+}
+
+.menu-option{
+    display: flex;
+    height: 40px;
+    padding-left: 3px;
+    align-items: center;
+    border-top-right-radius: 1.2rem ;
+    border-bottom-right-radius: 1.2rem;
+}
+.menu-option img{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+.option-name{
+    width: 168px;
+    font-size: 13px;
+    font-weight: 500;
+    color: $color-menu-optionName;
+}
+
+.menu-option:hover{
+    background-color: #F5F5F5;
+}
+
+.separacion{
+    border-bottom: 1px solid #dadce0;
+    width: 241px;
+    margin: 8px 0;
+}

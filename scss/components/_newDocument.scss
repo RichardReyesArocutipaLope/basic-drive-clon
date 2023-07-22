@@ -1,0 +1,26 @@
+.new-document{
+    padding: 12px 11px;
+}
+
+.add-button{
+    border-radius: 30px;
+    padding: 0px 9px;
+    height: 48px;
+    width: 125px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 1px 3px hsl(0,0,70);
+    transition: box-shadow .5s;
+}
+.add-button h3{
+    color: $color-cardTitle;
+    font-weight: 500;
+    font-size: 14px;
+}
+.add-button img{
+    padding-right: .6rem;
+}
+.add-button:hover{
+    background-color: #F1F3F4;
+    box-shadow: 0px 5px 15px hsl(0,0,70);
+}

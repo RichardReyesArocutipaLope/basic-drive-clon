@@ -1,0 +1,57 @@
+
+.sugerida-cards{
+    height: 209px;
+    display: flex;
+}
+.sugerida-title{
+    font-size: 14px;
+    font-weight: 500;
+    color: $color-dateEdit;
+    padding: 20px 8px 13px;
+}
+.card-sugerida{
+    margin: 7px;
+    border: 1px solid $color-border;
+    border-radius: 5px;
+    max-width: 300px;
+    min-width: 226px;
+    flex-basis: 226px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    cursor: pointer;
+}
+.card-sugerida img{
+    width: 100%;
+}
+
+
+.cs-image{
+    padding: 15.9px;
+    background-color: #F5F5F5;
+    overflow: hidden;
+    height: 118px;
+    border-radius: 5px;
+}
+
+.cs-info{
+    height: 71px;
+    padding: 13px 16px;
+    border-top: 1px solid $color-border;
+}
+.cs-title{
+    font-size: $font-size-cardTitle;
+    color: $color-cardTitle;
+    font-weight: 500;
+    gap: .8rem;
+
+}
+.cs-title img{
+    width: 16px;
+    height: 16px;
+}
+.cs-dateEdit{
+    color: $color-dateEdit;
+    font-size: $font-size-dateEdit;
+    font-weight: 400;
+    padding: 10px 0px;
+}
